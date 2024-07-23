@@ -3,7 +3,7 @@
 pkgname="sklauncher-bin"
 pkgdesc="Secure and modern Minecraft Launcher"
 
-pkgver=3.2.8
+pkgver=3.2.9
 pkgrel=1
 
 arch=(any)
@@ -18,7 +18,7 @@ provides=(sklauncher)
 install="sklauncher.install"
 
 source=("https://skmedix.pl/binaries/skl/${pkgver}/SKlauncher-${pkgver}.jar" "sklauncher" "LICENSE")
-md5sums=("3f6ae53541622bfd30d2d6a850a1c7fc" "3fbda136409cd254ce125839e59ae1c1" "edd0f7efa3df3a5cadaa2ecebf9eb57d")
+md5sums=("1033f2e492b6a760419ad3702c681752" "3fbda136409cd254ce125839e59ae1c1" "edd0f7efa3df3a5cadaa2ecebf9eb57d")
 
 noextract=("SKlauncher-${pkgver}.jar")
 
@@ -36,7 +36,7 @@ prepare() {
 }
 
 package() {
-	# copy the launcher .jar file
+	# copy the JAR file
 	install -Dm755 "SKlauncher-${pkgver}.jar" "${pkgdir}/usr/share/java/sklauncher/SKlauncher.jar"
 
 	# copy the executable script
@@ -46,6 +46,6 @@ package() {
 	install -Dm644 logo.png "${pkgdir}/usr/share/pixmaps/sklauncher.png"
 	install -Dm644 SKlauncher.desktop "${pkgdir}/usr/share/applications/sklauncher.desktop"
 
-	# copy the terms of service into a separate file
+	# copy the terms of service
 	install -Dm644 LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 }
