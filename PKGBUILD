@@ -3,7 +3,7 @@
 pkgname="sklauncher-bin"
 pkgdesc="Secure and modern Minecraft Launcher"
 
-pkgver=3.2.10
+pkgver=3.2.12
 pkgrel=1
 
 arch=(any)
@@ -18,7 +18,7 @@ provides=(sklauncher)
 install="sklauncher.install"
 
 source=("https://skmedix.pl/binaries/skl/${pkgver}/SKlauncher-${pkgver}.jar" "sklauncher" "LICENSE")
-md5sums=("1495e81aa573744050268cb330af8281" "3fbda136409cd254ce125839e59ae1c1" "edd0f7efa3df3a5cadaa2ecebf9eb57d")
+md5sums=("5b67c472ea94d09f540d598fcbd18f73" "3fbda136409cd254ce125839e59ae1c1" "edd0f7efa3df3a5cadaa2ecebf9eb57d")
 
 noextract=("SKlauncher-${pkgver}.jar")
 
