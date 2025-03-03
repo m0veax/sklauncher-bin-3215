@@ -1,9 +1,9 @@
 pkgbase = sklauncher-bin
 	pkgdesc = Secure and modern Minecraft Launcher
 	pkgver = 3.2.12
-	pkgrel = 1
+	pkgrel = 2
 	url = https://skmedix.pl
-	install = sklauncher.install
+	install = sklauncher-bin.install
 	arch = any
 	license = Apache-2.0
 	license = LicenseRef-SKlauncher
