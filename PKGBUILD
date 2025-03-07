@@ -4,7 +4,7 @@ pkgname="sklauncher-bin"
 pkgdesc="Secure and modern Minecraft Launcher"
 
 pkgver=3.2.12
-pkgrel=2
+pkgrel=3
 
 arch=(any)
 
@@ -17,7 +17,7 @@ provides=(sklauncher)
 
 install="${pkgname}.install"
 
-source=("https://skmedix.pl/binaries/skl/${pkgver}/SKlauncher-${pkgver}.jar" "sklauncher" "LICENSE")
+source=("https://skmedix.pl/binaries/skl/${pkgver}/SKlauncher-${pkgver}.jar" "sklauncher" "LICENSE.sklauncher")
 md5sums=("5b67c472ea94d09f540d598fcbd18f73" "3fbda136409cd254ce125839e59ae1c1" "edd0f7efa3df3a5cadaa2ecebf9eb57d")
 
 noextract=("SKlauncher-${pkgver}.jar")
@@ -47,5 +47,5 @@ package() {
 	install -Dm644 SKlauncher.desktop "${pkgdir}/usr/share/applications/sklauncher.desktop"
 
 	# copy the terms of service
-	install -Dm644 LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+	install -Dm644 LICENSE.sklauncher "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 }
