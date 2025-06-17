@@ -4,7 +4,7 @@ pkgname="sklauncher-bin"
 pkgdesc="Secure and modern Minecraft Launcher"
 
 pkgver=3.2.12
-pkgrel=3
+pkgrel=4
 
 arch=(any)
 
@@ -31,7 +31,7 @@ prepare() {
 		--pkgname SKlauncher \
 		--pkgdesc "${pkgdesc}" \
 		--exec sklauncher \
-		--icon sklauncher.png \
+		--icon sklauncher \
 		--categories "Game;Simulation"
 }
 
