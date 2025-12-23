@@ -18,7 +18,7 @@ provides=(sklauncher)
 install="${pkgname}.install"
 
 source=("https://skmedix.pl/binaries/skl/${pkgver}/SKlauncher-${pkgver}.jar" "sklauncher" "LICENSE.sklauncher")
-md5sums=("5b67c472ea94d09f540d598fcbd18f73" "3fbda136409cd254ce125839e59ae1c1" "edd0f7efa3df3a5cadaa2ecebf9eb57d")
+md5sums=("54d121176adfeff8b0f182117a8284bf" "3fbda136409cd254ce125839e59ae1c1" "edd0f7efa3df3a5cadaa2ecebf9eb57d")
 
 noextract=("SKlauncher-${pkgver}.jar")
 
