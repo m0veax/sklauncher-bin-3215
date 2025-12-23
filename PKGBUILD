@@ -3,7 +3,7 @@
 pkgname="sklauncher-bin"
 pkgdesc="Secure and modern Minecraft Launcher"
 
-pkgver=3.2.12
+pkgver=3.2.15
 pkgrel=4
 
 arch=(any)
